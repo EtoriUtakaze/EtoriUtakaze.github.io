@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web",
+    "section": "",
+    "text": "我的第一篇数学笔记\n\n\n\n数学\n\n函数\n\n\n\n\n\n\n\n\n\nOct 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nOct 24, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 21, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "江鸟吟风的小站。"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/first-math/index.html",
+    "href": "posts/first-math/index.html",
+    "title": "我的第一篇数学笔记",
+    "section": "",
+    "text": "这是我在个人网站上发布的第一篇数学笔记。"
+  },
+  {
+    "objectID": "posts/first-math/index.html#题目",
+    "href": "posts/first-math/index.html#题目",
+    "title": "我的第一篇数学笔记",
+    "section": "题目",
+    "text": "题目\n已知函数 \\(f(x)=x^2\\)，求它在 \\(x=1\\) 处的切线方程。"
+  },
+  {
+    "objectID": "posts/first-math/index.html#解答",
+    "href": "posts/first-math/index.html#解答",
+    "title": "我的第一篇数学笔记",
+    "section": "解答",
+    "text": "解答\n对函数求导，得到：\n\\[\nf'(x)=2x.\n\\]\n因此，切线斜率为 \\(f'(1)=2\\)，切点为 \\((1,1)\\)。\n由点斜式，切线方程为：\n\\[\ny-1=2(x-1),\n\\]\n即：\n\\[\n\\boxed{y=2x-1}.\n\\]"
+  }
+]
