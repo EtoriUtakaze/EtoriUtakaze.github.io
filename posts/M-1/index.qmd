@@ -1,0 +1,431 @@
+---
+title: "【19题系列】 Question 1"
+author: "江鸟吟风"
+date: "2026-10-24"
+categories: [数学, 平面几何, 导数]
+description: " 难度：★★★★★★☆☆☆☆"
+lang: zh-CN
+toc: true
+toc-depth: 2
+toc-title: "本文目录"
+format:
+  html:
+    html-math-method: mathjax
+---
+
+## 题目
+
+单位圆内有两条不重合的平行弦 $AB$、$CD$，其所在直线的距离为 $d$。两弦将圆分成三个区域；沿从 $AB$ 到 $CD$ 的方向，三个区域的面积依次为 $S_1,S_2,S_3$，且它们成公比为 $q$（$q\ge1$）的等比数列。
+
+（1）用含 $q$ 的式子分别表示 $S_1,S_2,S_3$；
+
+（2）若 $\dfrac{|CD|^3}{|AB|^3}=q^2$，求 $q$ 的值；
+
+（3）记 $d$ 的最大值为 $D$，证明：$2\sin\dfrac{\pi}{12}<D<2\tan\dfrac{\pi}{12}$。
+
+## 解答
+
+::: {.callout-note collapse="true" icon="false" title="点击展开 / 收起解答"}
+
+### （1）三部分面积
+
+由单位圆的面积为 $\pi$，且
+
+$$
+S_1:S_2:S_3=1:q:q^2,
+$$
+
+得
+
+$$
+\boxed{
+S_1=\frac{\pi}{1+q+q^2},\qquad
+S_2=\frac{\pi q}{1+q+q^2},\qquad
+S_3=\frac{\pi q^2}{1+q+q^2}
+}.
+$$
+
+### （2）确定公比
+
+令
+
+$$
+A(x)=x-\sin x\cos x,\qquad 0<x<\pi.
+$$
+
+圆心角为 $2x$ 的弓形，其面积为 $A(x)$，对应弦长为 $2\sin x$。这里圆心角按弓形所在一侧的弧取值，允许大于 $\pi$。
+
+设面积为 $S_1,S_3$ 的两个外侧弓形，所对应的圆心角分别为 $2\theta,2\phi$，则
+
+$$
+S_1=A(\theta),\qquad S_3=A(\phi),
+$$
+
+$$
+|AB|=2\sin\theta,\qquad |CD|=2\sin\phi.
+$$
+
+由（1）及本问条件，
+
+$$
+A(\phi)=q^2A(\theta),\qquad
+\sin^3\phi=q^2\sin^3\theta.
+$$
+
+因此
+
+$$
+\frac{A(\theta)}{\sin^3\theta}
+=
+\frac{A(\phi)}{\sin^3\phi}. \tag{1}
+$$
+
+下面证明函数
+
+$$
+F(x)=\frac{A(x)}{\sin^3x}
+$$
+
+在 $(0,\pi)$ 上严格递增。
+
+由
+
+$$
+A'(x)=2\sin^2x>0,\qquad A(0)=0,
+$$
+
+可知 $A(x)>0$（$0<x<\pi$）。求导得
+
+$$
+F'(x)
+=
+\frac{3\sin x-\sin^3x-3x\cos x}{\sin^4x}.
+$$
+
+令
+
+$$
+H(x)=3\sin x-\sin^3x-3x\cos x,
+$$
+
+则
+
+$$
+\begin{aligned}
+H'(x)
+&=3x\sin x-3\sin^2x\cos x\\
+&=3\sin x\bigl(x-\sin x\cos x\bigr)\\
+&=3\sin x\,A(x)>0
+\qquad(0<x<\pi).
+\end{aligned}
+$$
+
+又 $H(0)=0$，故 $H(x)>0$，从而
+
+$$
+F'(x)>0.
+$$
+
+由式（1）及 $F$ 的严格单调性，得
+
+$$
+\theta=\phi,
+$$
+
+于是 $S_1=S_3$。结合第（1）问的结果及 $q\ge1$，得
+
+$$
+q^2=1,\qquad \boxed{q=1}.
+$$
+
+### （3）最大距离及其范围
+
+因为 $A$ 在 $(0,\pi)$ 上严格递增，且
+
+$$
+\lim_{x\to0^+}A(x)=0,\qquad
+\lim_{x\to\pi^-}A(x)=\pi,
+$$
+
+所以对每个 $q\ge1$，可分别定义唯一的 $f(q),g(q)\in(0,\pi)$，使
+
+$$
+A(f(q))=\frac{\pi}{1+q+q^2},
+\qquad
+A(g(q))=\frac{\pi q^2}{1+q+q^2}. \tag{2}
+$$
+
+取垂直于两弦、过圆心的坐标轴，以从 $AB$ 到 $CD$ 的方向为正方向，则两弦所在直线的坐标分别为
+
+$$
+-\cos f(q),\qquad \cos g(q).
+$$
+
+于是
+
+$$
+d(q)=\cos f(q)+\cos g(q). \tag{3}
+$$
+
+**① 确定最大值取得的位置。**
+
+当 $q>1$ 时，由式（2）及 $A$ 严格递增，得
+
+$$
+f(q)<g(q).
+$$
+
+利用第（2）问中已证的 $F$ 严格递增，有
+
+$$
+\frac{A(g(q))}{\sin^3g(q)}
+>
+\frac{A(f(q))}{\sin^3f(q)}.
+$$
+
+又
+
+$$
+A(g(q))=q^2A(f(q)),
+$$
+
+所以
+
+$$
+\frac{\sin g(q)}{\sin f(q)}<q^{2/3}. \tag{4}
+$$
+
+由于
+
+$$
+q^{1/3}(q+2)-(2q+1)
+=(q^{1/3}-1)^3(q^{1/3}+1)>0,
+$$
+
+故
+
+$$
+q^{2/3}<\frac{q(q+2)}{2q+1}.
+$$
+
+结合式（4），得
+
+$$
+\frac{\sin g(q)}{\sin f(q)}
+<
+\frac{q(q+2)}{2q+1}. \tag{5}
+$$
+
+对式（2）中的两式分别关于 $q$ 求导，得
+
+$$
+2\sin^2f(q)\,f'(q)
+=-\frac{\pi(1+2q)}{(1+q+q^2)^2},
+$$
+
+$$
+2\sin^2g(q)\,g'(q)
+=\frac{\pi q(q+2)}{(1+q+q^2)^2}.
+$$
+
+因此
+
+$$
+\begin{aligned}
+d'(q)
+&=-\sin f(q)\,f'(q)-\sin g(q)\,g'(q)\\
+&=\frac{\pi}{2(1+q+q^2)^2}
+\left(
+\frac{1+2q}{\sin f(q)}
+-\frac{q(q+2)}{\sin g(q)}
+\right).
+\end{aligned}
+$$
+
+由式（5）知
+
+$$
+d'(q)<0\qquad(q>1).
+$$
+
+故 $d(q)$ 在 $[1,+\infty)$ 上严格递减，最大值在 $q=1$ 时取得。
+
+此时 $S_1=S_3=\pi/3$，故 $f(1)=g(1)$。记这一固定角为 $\theta_0$，则
+
+$$
+A(\theta_0)=\frac{\pi}{3},
+\qquad
+\boxed{D=2\cos\theta_0}. \tag{6}
+$$
+
+**② 证明下界。**
+
+因为
+
+$$
+A\left(\frac{\pi}{3}\right)
+=\frac{\pi}{3}-\frac{\sqrt3}{4}
+<\frac{\pi}{3},
+$$
+
+且
+
+$$
+A\left(\frac{5\pi}{12}\right)
+=\frac{5\pi}{12}-\frac14
+=\frac{\pi}{3}+\frac{\pi-3}{12}
+>\frac{\pi}{3},
+$$
+
+由 $A$ 严格递增，得
+
+$$
+\frac{\pi}{3}<\theta_0<\frac{5\pi}{12}.
+$$
+
+因此
+
+$$
+\boxed{
+D=2\cos\theta_0
+>2\cos\frac{5\pi}{12}
+=2\sin\frac{\pi}{12}
+}. \tag{7}
+$$
+
+**③ 证明上界。**
+
+令
+
+$$
+x_0=\frac{\pi}{2}-\theta_0,
+$$
+
+则
+
+$$
+0<x_0<\frac{\pi}{6}.
+$$
+
+由式（6），
+
+$$
+\frac{\pi}{2}-x_0-\sin x_0\cos x_0
+=\frac{\pi}{3},
+$$
+
+即
+
+$$
+x_0+\sin x_0\cos x_0=\frac{\pi}{6},
+\qquad
+D=2\sin x_0. \tag{8}
+$$
+
+对任意 $x\in[0,\pi/6]$，定义 $h(x)$ 为满足
+
+$$
+\tan h(x)=\sin x,\qquad
+0\le h(x)<\frac{\pi}{2}
+$$
+
+的唯一角。由定义求导，得
+
+$$
+\bigl(1+\tan^2h(x)\bigr)h'(x)=\cos x,
+$$
+
+所以
+
+$$
+h'(x)=\frac{\cos x}{1+\sin^2x}.
+$$
+
+令
+
+$$
+J(x)=x+\sin x\cos x-2h(x),
+$$
+
+则
+
+$$
+\begin{aligned}
+J'(x)
+&=2\cos^2x-\frac{2\cos x}{1+\sin^2x}\\
+&=\frac{
+2\cos x(1-\cos x)(\cos^2x+\cos x-1)
+}{1+\sin^2x}.
+\end{aligned}
+$$
+
+当 $0<x<\pi/6$ 时，
+
+$$
+\cos x>\frac{\sqrt3}{2},
+$$
+
+故
+
+$$
+\cos^2x+\cos x-1
+>\frac34+\frac{\sqrt3}{2}-1>0.
+$$
+
+因此
+
+$$
+J'(x)>0\qquad\left(0<x<\frac{\pi}{6}\right).
+$$
+
+又 $h(0)=0$，从而 $J(0)=0$，故
+
+$$
+J(x_0)>0.
+$$
+
+结合式（8），得
+
+$$
+2h(x_0)
+<x_0+\sin x_0\cos x_0
+=\frac{\pi}{6},
+$$
+
+即
+
+$$
+h(x_0)<\frac{\pi}{12}.
+$$
+
+由正切函数在 $[0,\pi/2)$ 上严格递增，得
+
+$$
+\sin x_0
+=\tan h(x_0)
+<\tan\frac{\pi}{12}.
+$$
+
+因此
+
+$$
+\boxed{
+D=2\sin x_0<2\tan\frac{\pi}{12}
+}. \tag{9}
+$$
+
+综合式（7）（9），得
+
+$$
+\boxed{
+2\sin\frac{\pi}{12}
+<D<
+2\tan\frac{\pi}{12}
+}.
+$$
+
+:::
+
+## 讨论区
+
+留言功能暂未开放。

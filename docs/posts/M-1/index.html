@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-10-24">
+<meta name="author" content="江鸟吟风">
+<meta name="description" content="难度：★★★★★★☆☆☆☆">
 
-<title>我的第一篇数学笔记 – 吟风庭</title>
+<title>【19题系列】 Question 1 – 吟风庭</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -61,17 +62,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
   }
 }</script>
 
@@ -108,7 +109,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -119,8 +120,8 @@ window.Quarto = {
     <span class="navbar-title">吟风庭</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="搜索"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="展开或折叠导航栏" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -150,10 +151,16 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">我的第一篇数学笔记</h1>
-                                <div class="quarto-categories">
+      <h1 class="title">【19题系列】 Question 1</h1>
+                  <div>
+        <div class="description">
+          难度：★★★★★★☆☆☆☆
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">数学</div>
-                <div class="quarto-category">函数</div>
+                <div class="quarto-category">平面几何</div>
+                <div class="quarto-category">导数</div>
               </div>
                   </div>
   </div>
@@ -161,11 +168,17 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">作者</div>
+      <div class="quarto-title-meta-contents">
+               <p>江鸟吟风 </p>
+            </div>
+    </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">发布于</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 24, 2026</p>
+        <p class="date">2026年10月24日</p>
       </div>
     </div>
     
@@ -176,7 +189,17 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">本文目录</h2>
+   
+  <ul class="collapse">
+  <li><a href="#题目" id="toc-题目" class="nav-link active" data-scroll-target="#题目">题目</a></li>
+  <li><a href="#解答" id="toc-解答" class="nav-link" data-scroll-target="#解答">解答</a></li>
+  <li><a href="#讨论区" id="toc-讨论区" class="nav-link" data-scroll-target="#讨论区">讨论区</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -184,26 +207,324 @@ window.Quarto = {
 
 
 
-<p>这是我在个人网站上发布的第一篇数学笔记。</p>
 <section id="题目" class="level2">
 <h2 class="anchored" data-anchor-id="题目">题目</h2>
-<p>已知函数 <span class="math inline">\(f(x)=x^2\)</span>，求它在 <span class="math inline">\(x=1\)</span> 处的切线方程。</p>
+<p>单位圆内有两条不重合的平行弦 <span class="math inline">\(AB\)</span>、<span class="math inline">\(CD\)</span>，其所在直线的距离为 <span class="math inline">\(d\)</span>。两弦将圆分成三个区域；沿从 <span class="math inline">\(AB\)</span> 到 <span class="math inline">\(CD\)</span> 的方向，三个区域的面积依次为 <span class="math inline">\(S_1,S_2,S_3\)</span>，且它们成公比为 <span class="math inline">\(q\)</span>（<span class="math inline">\(q\ge1\)</span>）的等比数列。</p>
+<p>（1）用含 <span class="math inline">\(q\)</span> 的式子分别表示 <span class="math inline">\(S_1,S_2,S_3\)</span>；</p>
+<p>（2）若 <span class="math inline">\(\dfrac{|CD|^3}{|AB|^3}=q^2\)</span>，求 <span class="math inline">\(q\)</span> 的值；</p>
+<p>（3）记 <span class="math inline">\(d\)</span> 的最大值为 <span class="math inline">\(D\)</span>，证明：<span class="math inline">\(2\sin\dfrac{\pi}{12}&lt;D&lt;2\tan\dfrac{\pi}{12}\)</span>。</p>
 </section>
 <section id="解答" class="level2">
 <h2 class="anchored" data-anchor-id="解答">解答</h2>
-<p>对函数求导，得到：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="点击展开 / 收起解答">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">注记</span>点击展开 / 收起解答
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="三部分面积" class="level3">
+<h3 class="anchored" data-anchor-id="三部分面积">（1）三部分面积</h3>
+<p>由单位圆的面积为 <span class="math inline">\(\pi\)</span>，且</p>
 <p><span class="math display">\[
-f'(x)=2x.
+S_1:S_2:S_3=1:q:q^2,
 \]</span></p>
-<p>因此，切线斜率为 <span class="math inline">\(f'(1)=2\)</span>，切点为 <span class="math inline">\((1,1)\)</span>。</p>
-<p>由点斜式，切线方程为：</p>
+<p>得</p>
 <p><span class="math display">\[
-y-1=2(x-1),
+\boxed{
+S_1=\frac{\pi}{1+q+q^2},\qquad
+S_2=\frac{\pi q}{1+q+q^2},\qquad
+S_3=\frac{\pi q^2}{1+q+q^2}
+}.
 \]</span></p>
-<p>即：</p>
+</section>
+<section id="确定公比" class="level3">
+<h3 class="anchored" data-anchor-id="确定公比">（2）确定公比</h3>
+<p>令</p>
 <p><span class="math display">\[
-\boxed{y=2x-1}.
+A(x)=x-\sin x\cos x,\qquad 0&lt;x&lt;\pi.
 \]</span></p>
+<p>圆心角为 <span class="math inline">\(2x\)</span> 的弓形，其面积为 <span class="math inline">\(A(x)\)</span>，对应弦长为 <span class="math inline">\(2\sin x\)</span>。这里圆心角按弓形所在一侧的弧取值，允许大于 <span class="math inline">\(\pi\)</span>。</p>
+<p>设面积为 <span class="math inline">\(S_1,S_3\)</span> 的两个外侧弓形，所对应的圆心角分别为 <span class="math inline">\(2\theta,2\phi\)</span>，则</p>
+<p><span class="math display">\[
+S_1=A(\theta),\qquad S_3=A(\phi),
+\]</span></p>
+<p><span class="math display">\[
+|AB|=2\sin\theta,\qquad |CD|=2\sin\phi.
+\]</span></p>
+<p>由（1）及本问条件，</p>
+<p><span class="math display">\[
+A(\phi)=q^2A(\theta),\qquad
+\sin^3\phi=q^2\sin^3\theta.
+\]</span></p>
+<p>因此</p>
+<p><span class="math display">\[
+\frac{A(\theta)}{\sin^3\theta}
+=
+\frac{A(\phi)}{\sin^3\phi}. \tag{1}
+\]</span></p>
+<p>下面证明函数</p>
+<p><span class="math display">\[
+F(x)=\frac{A(x)}{\sin^3x}
+\]</span></p>
+<p>在 <span class="math inline">\((0,\pi)\)</span> 上严格递增。</p>
+<p>由</p>
+<p><span class="math display">\[
+A'(x)=2\sin^2x&gt;0,\qquad A(0)=0,
+\]</span></p>
+<p>可知 <span class="math inline">\(A(x)&gt;0\)</span>（<span class="math inline">\(0&lt;x&lt;\pi\)</span>）。求导得</p>
+<p><span class="math display">\[
+F'(x)
+=
+\frac{3\sin x-\sin^3x-3x\cos x}{\sin^4x}.
+\]</span></p>
+<p>令</p>
+<p><span class="math display">\[
+H(x)=3\sin x-\sin^3x-3x\cos x,
+\]</span></p>
+<p>则</p>
+<p><span class="math display">\[
+\begin{aligned}
+H'(x)
+&amp;=3x\sin x-3\sin^2x\cos x\\
+&amp;=3\sin x\bigl(x-\sin x\cos x\bigr)\\
+&amp;=3\sin x\,A(x)&gt;0
+\qquad(0&lt;x&lt;\pi).
+\end{aligned}
+\]</span></p>
+<p>又 <span class="math inline">\(H(0)=0\)</span>，故 <span class="math inline">\(H(x)&gt;0\)</span>，从而</p>
+<p><span class="math display">\[
+F'(x)&gt;0.
+\]</span></p>
+<p>由式（1）及 <span class="math inline">\(F\)</span> 的严格单调性，得</p>
+<p><span class="math display">\[
+\theta=\phi,
+\]</span></p>
+<p>于是 <span class="math inline">\(S_1=S_3\)</span>。结合第（1）问的结果及 <span class="math inline">\(q\ge1\)</span>，得</p>
+<p><span class="math display">\[
+q^2=1,\qquad \boxed{q=1}.
+\]</span></p>
+</section>
+<section id="最大距离及其范围" class="level3">
+<h3 class="anchored" data-anchor-id="最大距离及其范围">（3）最大距离及其范围</h3>
+<p>因为 <span class="math inline">\(A\)</span> 在 <span class="math inline">\((0,\pi)\)</span> 上严格递增，且</p>
+<p><span class="math display">\[
+\lim_{x\to0^+}A(x)=0,\qquad
+\lim_{x\to\pi^-}A(x)=\pi,
+\]</span></p>
+<p>所以对每个 <span class="math inline">\(q\ge1\)</span>，可分别定义唯一的 <span class="math inline">\(f(q),g(q)\in(0,\pi)\)</span>，使</p>
+<p><span class="math display">\[
+A(f(q))=\frac{\pi}{1+q+q^2},
+\qquad
+A(g(q))=\frac{\pi q^2}{1+q+q^2}. \tag{2}
+\]</span></p>
+<p>取垂直于两弦、过圆心的坐标轴，以从 <span class="math inline">\(AB\)</span> 到 <span class="math inline">\(CD\)</span> 的方向为正方向，则两弦所在直线的坐标分别为</p>
+<p><span class="math display">\[
+-\cos f(q),\qquad \cos g(q).
+\]</span></p>
+<p>于是</p>
+<p><span class="math display">\[
+d(q)=\cos f(q)+\cos g(q). \tag{3}
+\]</span></p>
+<p><strong>① 确定最大值取得的位置。</strong></p>
+<p>当 <span class="math inline">\(q&gt;1\)</span> 时，由式（2）及 <span class="math inline">\(A\)</span> 严格递增，得</p>
+<p><span class="math display">\[
+f(q)&lt;g(q).
+\]</span></p>
+<p>利用第（2）问中已证的 <span class="math inline">\(F\)</span> 严格递增，有</p>
+<p><span class="math display">\[
+\frac{A(g(q))}{\sin^3g(q)}
+&gt;
+\frac{A(f(q))}{\sin^3f(q)}.
+\]</span></p>
+<p>又</p>
+<p><span class="math display">\[
+A(g(q))=q^2A(f(q)),
+\]</span></p>
+<p>所以</p>
+<p><span class="math display">\[
+\frac{\sin g(q)}{\sin f(q)}&lt;q^{2/3}. \tag{4}
+\]</span></p>
+<p>由于</p>
+<p><span class="math display">\[
+q^{1/3}(q+2)-(2q+1)
+=(q^{1/3}-1)^3(q^{1/3}+1)&gt;0,
+\]</span></p>
+<p>故</p>
+<p><span class="math display">\[
+q^{2/3}&lt;\frac{q(q+2)}{2q+1}.
+\]</span></p>
+<p>结合式（4），得</p>
+<p><span class="math display">\[
+\frac{\sin g(q)}{\sin f(q)}
+&lt;
+\frac{q(q+2)}{2q+1}. \tag{5}
+\]</span></p>
+<p>对式（2）中的两式分别关于 <span class="math inline">\(q\)</span> 求导，得</p>
+<p><span class="math display">\[
+2\sin^2f(q)\,f'(q)
+=-\frac{\pi(1+2q)}{(1+q+q^2)^2},
+\]</span></p>
+<p><span class="math display">\[
+2\sin^2g(q)\,g'(q)
+=\frac{\pi q(q+2)}{(1+q+q^2)^2}.
+\]</span></p>
+<p>因此</p>
+<p><span class="math display">\[
+\begin{aligned}
+d'(q)
+&amp;=-\sin f(q)\,f'(q)-\sin g(q)\,g'(q)\\
+&amp;=\frac{\pi}{2(1+q+q^2)^2}
+\left(
+\frac{1+2q}{\sin f(q)}
+-\frac{q(q+2)}{\sin g(q)}
+\right).
+\end{aligned}
+\]</span></p>
+<p>由式（5）知</p>
+<p><span class="math display">\[
+d'(q)&lt;0\qquad(q&gt;1).
+\]</span></p>
+<p>故 <span class="math inline">\(d(q)\)</span> 在 <span class="math inline">\([1,+\infty)\)</span> 上严格递减，最大值在 <span class="math inline">\(q=1\)</span> 时取得。</p>
+<p>此时 <span class="math inline">\(S_1=S_3=\pi/3\)</span>，故 <span class="math inline">\(f(1)=g(1)\)</span>。记这一固定角为 <span class="math inline">\(\theta_0\)</span>，则</p>
+<p><span class="math display">\[
+A(\theta_0)=\frac{\pi}{3},
+\qquad
+\boxed{D=2\cos\theta_0}. \tag{6}
+\]</span></p>
+<p><strong>② 证明下界。</strong></p>
+<p>因为</p>
+<p><span class="math display">\[
+A\left(\frac{\pi}{3}\right)
+=\frac{\pi}{3}-\frac{\sqrt3}{4}
+&lt;\frac{\pi}{3},
+\]</span></p>
+<p>且</p>
+<p><span class="math display">\[
+A\left(\frac{5\pi}{12}\right)
+=\frac{5\pi}{12}-\frac14
+=\frac{\pi}{3}+\frac{\pi-3}{12}
+&gt;\frac{\pi}{3},
+\]</span></p>
+<p>由 <span class="math inline">\(A\)</span> 严格递增，得</p>
+<p><span class="math display">\[
+\frac{\pi}{3}&lt;\theta_0&lt;\frac{5\pi}{12}.
+\]</span></p>
+<p>因此</p>
+<p><span class="math display">\[
+\boxed{
+D=2\cos\theta_0
+&gt;2\cos\frac{5\pi}{12}
+=2\sin\frac{\pi}{12}
+}. \tag{7}
+\]</span></p>
+<p><strong>③ 证明上界。</strong></p>
+<p>令</p>
+<p><span class="math display">\[
+x_0=\frac{\pi}{2}-\theta_0,
+\]</span></p>
+<p>则</p>
+<p><span class="math display">\[
+0&lt;x_0&lt;\frac{\pi}{6}.
+\]</span></p>
+<p>由式（6），</p>
+<p><span class="math display">\[
+\frac{\pi}{2}-x_0-\sin x_0\cos x_0
+=\frac{\pi}{3},
+\]</span></p>
+<p>即</p>
+<p><span class="math display">\[
+x_0+\sin x_0\cos x_0=\frac{\pi}{6},
+\qquad
+D=2\sin x_0. \tag{8}
+\]</span></p>
+<p>对任意 <span class="math inline">\(x\in[0,\pi/6]\)</span>，定义 <span class="math inline">\(h(x)\)</span> 为满足</p>
+<p><span class="math display">\[
+\tan h(x)=\sin x,\qquad
+0\le h(x)&lt;\frac{\pi}{2}
+\]</span></p>
+<p>的唯一角。由定义求导，得</p>
+<p><span class="math display">\[
+\bigl(1+\tan^2h(x)\bigr)h'(x)=\cos x,
+\]</span></p>
+<p>所以</p>
+<p><span class="math display">\[
+h'(x)=\frac{\cos x}{1+\sin^2x}.
+\]</span></p>
+<p>令</p>
+<p><span class="math display">\[
+J(x)=x+\sin x\cos x-2h(x),
+\]</span></p>
+<p>则</p>
+<p><span class="math display">\[
+\begin{aligned}
+J'(x)
+&amp;=2\cos^2x-\frac{2\cos x}{1+\sin^2x}\\
+&amp;=\frac{
+2\cos x(1-\cos x)(\cos^2x+\cos x-1)
+}{1+\sin^2x}.
+\end{aligned}
+\]</span></p>
+<p>当 <span class="math inline">\(0&lt;x&lt;\pi/6\)</span> 时，</p>
+<p><span class="math display">\[
+\cos x&gt;\frac{\sqrt3}{2},
+\]</span></p>
+<p>故</p>
+<p><span class="math display">\[
+\cos^2x+\cos x-1
+&gt;\frac34+\frac{\sqrt3}{2}-1&gt;0.
+\]</span></p>
+<p>因此</p>
+<p><span class="math display">\[
+J'(x)&gt;0\qquad\left(0&lt;x&lt;\frac{\pi}{6}\right).
+\]</span></p>
+<p>又 <span class="math inline">\(h(0)=0\)</span>，从而 <span class="math inline">\(J(0)=0\)</span>，故</p>
+<p><span class="math display">\[
+J(x_0)&gt;0.
+\]</span></p>
+<p>结合式（8），得</p>
+<p><span class="math display">\[
+2h(x_0)
+&lt;x_0+\sin x_0\cos x_0
+=\frac{\pi}{6},
+\]</span></p>
+<p>即</p>
+<p><span class="math display">\[
+h(x_0)&lt;\frac{\pi}{12}.
+\]</span></p>
+<p>由正切函数在 <span class="math inline">\([0,\pi/2)\)</span> 上严格递增，得</p>
+<p><span class="math display">\[
+\sin x_0
+=\tan h(x_0)
+&lt;\tan\frac{\pi}{12}.
+\]</span></p>
+<p>因此</p>
+<p><span class="math display">\[
+\boxed{
+D=2\sin x_0&lt;2\tan\frac{\pi}{12}
+}. \tag{9}
+\]</span></p>
+<p>综合式（7）（9），得</p>
+<p><span class="math display">\[
+\boxed{
+2\sin\frac{\pi}{12}
+&lt;D&lt;
+2\tan\frac{\pi}{12}
+}.
+\]</span></p>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="讨论区" class="level2">
+<h2 class="anchored" data-anchor-id="讨论区">讨论区</h2>
+<p>留言功能暂未开放。</p>
 
 
 </section>
@@ -234,12 +555,12 @@ y-1=2(x-1),
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "已复制");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "已复制");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
